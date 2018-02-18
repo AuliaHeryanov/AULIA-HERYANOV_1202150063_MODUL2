@@ -19,7 +19,7 @@ public class DaftarMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar_menu);
 
-        menuList = isiMenu(); //
+        menuList = isiMenu();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         menuAdapter = new MenuAdapter(menuList);
         recyclerView.setAdapter(menuAdapter);
