@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.auliaheryanov.auliaheryanov_1202150063_modul2.DineIn">
+
+    <TextView
+        android:id="@+id/judulDine"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Detail Customer"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulDine"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/judulSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/judulDine"
+        android:layout_alignStart="@+id/judulDine"
+        android:layout_alignTop="@+id/spinnerMeja"
+        android:text="No. Meja"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/spinnerMeja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/judulSpinner"
+        android:layout_toRightOf="@+id/judulSpinner" />
+
+    <Button
+        android:id="@+id/buttonPesanDine"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/judulDine"
+        android:layout_alignRight="@+id/judulDine"
+        android:layout_below="@+id/spinnerMeja"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:onClick="buttonDine"
+        android:text="Pesan Sekarang" />
+
+</RelativeLayout>

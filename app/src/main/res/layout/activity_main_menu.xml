@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.auliaheryanov.auliaheryanov_1202150063_modul2.MainMenu">
+
+    <ImageView
+        android:id="@+id/logoRM"
+        android:layout_width="wrap_content"
+        android:layout_height="162dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/salerokitologo"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="Pilih Menu"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioDinein"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Dine In" />
+
+        <RadioButton
+            android:id="@+id/radioTakeaway"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Take Away" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonPesanMain"
+        android:onClick="next"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="Pesan Sekarang" />
+
+</LinearLayout>
